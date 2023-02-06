@@ -1,0 +1,22 @@
+<div class="convertation">
+    <div class="convertationForm">
+        <form [formGroup]="convertForm">
+            <div class="convertation_inputSelect">
+                <input type="number" formControlName="givedCurency" (input)="calculateReceivedCurency()">
+                <select class="form-select" aria-label="Default select example" (click)="changeValue1($event)">
+                    <option selected value="UAH">UAH</option>
+                    <option value="EUR">EUR</option>
+                    <option value="USD">USD</option>
+                  </select>
+            </div>
+            <div class="convertation_inputSelect">
+                <input type="number" formControlName="receivedCurency" (input)="calculateGivedCurency()">
+                <select class="form-select" aria-label="Default select example" (click)="changeValue2($event)">
+                    <option value="UAH">UAH</option>
+                    <option value="EUR">EUR</option>
+                    <option selected value="USD">USD</option>
+                  </select>
+            </div>
+        </form>
+    </div>
+</div>

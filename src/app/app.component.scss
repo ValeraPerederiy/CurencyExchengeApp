@@ -1,0 +1,33 @@
+.wrapper{
+    margin:0;
+    padding: 0;
+    background-color: #1E192D;
+    width:100vw;
+    height: 100vh;
+    display: flex;
+    .container{
+        max-width:1024px;
+        margin: auto;
+        header{
+            background: #493663;
+            opacity: 0.8;
+            border-radius: 12px;
+            color: #fff;
+            font-weight: 700;
+            font-size: 22px;
+            display:flex;
+            justify-content: space-between;
+            height: 70px;
+            margin: 0 auto;
+            padding: 15px;
+            
+            .actualCurency{
+                span{
+                    margin-left: 30px;
+                }
+            }
+        }
+
+       
+    }
+}
