@@ -7,7 +7,7 @@ import { DataBaseService } from '../share/data-base.service';
   templateUrl: './convertation.component.html',
   styleUrls: ['./convertation.component.scss']
 })
-export class ConvertationComponent implements OnInit {
+export class ConvertationComponent {
 
   public convertForm:FormGroup;
   public value1:string = 'UAH'
@@ -18,9 +18,6 @@ export class ConvertationComponent implements OnInit {
       'receivedCurency':new FormControl('')
     })
    }
-
-  ngOnInit(): void {
-  }
 
   public calculateReceivedCurency():void{
     this.dataBase.getCurency(this.value1, this.value2).subscribe(res=>{
